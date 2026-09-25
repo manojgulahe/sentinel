@@ -1,0 +1,200 @@
+Agent:  
+> Thought  
+> **Reviewing App Details**  
+>   
+> I'm currently reviewing the app details to ensure the Privacy Policy HTML accurately reflects the current state of SMS Kavach. I've noted the app name update, and this will be incorporated.  
+>   
+>   
+> **Defining Privacy Scope**  
+>   
+> I'm now defining the privacy scope for the SMS Kavach application. I've pinpointed the key aspects: `mangogolahe@gmail.com` as the contact email and `July 21, 2025` as the effective date. I'm focusing on the core functionality, real-time SMS threat detection, spam blocking, scam link filtering, and call-time OTP fraud warnings. I'm carefully documenting each permission used and the data privacy guarantee, including on-device processing and local encryption via AES-256 GCM.  
+>   
+>   
+>   
+Here is a clean, modern, and mobile-responsive HTML Privacy Policy page tailored for **SMS Kavach**.
+
+You can save this file as `privacy_policy.html` and host it on **GitHub Pages**, **Firebase Hosting**, **Netlify**, or your website to link directly inside the **Google Play Console**.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SMS Kavach</title>
+    <style>
+        :root {
+            --primary-color: #1976D2;
+            --accent-color: #D32F2F;
+            --bg-color: #F8F9FA;
+            --card-bg: #FFFFFF;
+            --text-color: #212529;
+            --text-muted: #6C757D;
+            --border-color: #DEE2E6;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #101820;
+                --card-bg: #1E272C;
+                --text-color: #ECEFF1;
+                --text-muted: #B0BEC5;
+                --border-color: #2C3E50;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+
+        .effective-date {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-top: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight-box {
+            background-color: rgba(25, 118, 210, 0.08);
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🛡️ SMS Kavach</h1>
+        <p><strong>Privacy Policy</strong></p>
+        <p class="effective-date">Effective Date: July 21, 2025</p>
+    </header>
+
+    <div class="highlight-box">
+        <strong>100% On-Device Privacy Commitment:</strong> SMS Kavach runs threat detection completely locally on your device. Your SMS messages, phone status, and personal data are <strong>never uploaded, shared, or transmitted to any external servers</strong>.
+    </div>
+
+    <section>
+        <h2>1. Overview</h2>
+        <p>Your privacy is of utmost importance to us. This Privacy Policy explains how <strong>SMS Kavach</strong> ("we", "us", or "our") handles permissions and information when you use our mobile application.</p>
+    </section>
+
+    <section>
+        <h2>2. Information We Collect</h2>
+        <p><strong>SMS Kavach does NOT collect, store on servers, or transmit any personal data.</strong></p>
+        <ul>
+            <li><strong>Local On-Device Analysis:</strong> All SMS threat scanning occurs in real-time on your phone's processor.</li>
+            <li><strong>Encrypted Local Log:</strong> If a spam or phishing message is intercepted, it is saved strictly in your phone's local storage in an encrypted format using hardware-backed <strong>AES-256 GCM encryption</strong> via the Android KeyStore. Nobody else can read your local log.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Permissions We Use & Why</h2>
+        <p>SMS Kavach requests sensitive permissions strictly for its core functionality as an SMS spam blocker and phishing threat guardian:</p>
+        <ul>
+            <li><strong><code>RECEIVE_SMS</code> & <code>READ_SMS</code>:</strong> Required to detect incoming SMS messages in real time and scan text content for phishing links, fake KYC alerts, APK malware downloads, and lottery scams.</li>
+            <li><strong><code>READ_PHONE_STATE</code>:</strong> Used strictly to detect if an active phone call is ongoing when an OTP arrives, enabling our <em>Call-Time OTP Fraud Warning</em> feature to prevent phone call scams.</li>
+            <li><strong><code>SYSTEM_ALERT_WINDOW</code>:</strong> Allows SMS Kavach to display a real-time warning popup over your screen whenever a high-risk SMS threat is detected.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Third-Party Services</h2>
+        <p>Our app integrates trusted third-party SDKs for non-intrusive ads and app stability monitoring:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> Serves non-intrusive banner advertisements. AdMob may collect anonymous device identifiers strictly for ad delivery in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+            <li><strong>Firebase Analytics:</strong> Collects anonymous crash logs and basic performance diagnostics to keep the app stable and crash-free.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Sharing of Information</h2>
+        <p>We <strong>do not sell, rent, trade, or share</strong> your personal information or SMS content with any third parties. All threat evaluation happens locally on your Android device.</p>
+    </section>
+
+    <section>
+        <h2>6. Children's Privacy</h2>
+        <p>SMS Kavach is not directed to children under 13 and does not knowingly collect personal information from children.</p>
+    </section>
+
+    <section>
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically. Any updates will be reflected on this page with an updated effective date.</p>
+    </section>
+
+    <section>
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:mangogolahe@gmail.com">mangogolahe@gmail.com</a></p>
+    </section>
+
+    <div class="footer">
+        © 2025 SMS Kavach. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
+```
