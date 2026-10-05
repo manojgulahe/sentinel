@@ -1,0 +1,7 @@
+{
+  "version": "1.0.1",
+  "file": "sms_model.tsv.gz",
+  "size": 37346,
+  "sha256": "8ebd0af49c8b9013eb7c7103f891021bbe16b9db92282ba8bfd38d88c3bfd0f5",
+  "format": "naive-bayes-log-odds-tsv-gzip-v1"
+}
