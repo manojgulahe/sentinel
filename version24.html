@@ -5,177 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - SMS Kavach</title>
     <style>
-        :root {
-            --primary-color: #1976D2;
-            --accent-color: #D32F2F;
-            --bg-color: #F8F9FA;
-            --card-bg: #FFFFFF;
-            --text-color: #212529;
-            --text-muted: #6C757D;
-            --border-color: #DEE2E6;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #101820;
-                --card-bg: #1E272C;
-                --text-color: #ECEFF1;
-                --text-muted: #B0BEC5;
-                --border-color: #2C3E50;
-            }
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
             line-height: 1.6;
+            color: #212529;
+            background-color: #f8f9fa;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
-
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            background-color: var(--card-bg);
+            margin: 30px auto;
+            background: #ffffff;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
         h1 {
-            color: var(--primary-color);
-            margin-bottom: 5px;
-            font-size: 28px;
+            color: #1976d2;
+            border-bottom: 2px solid #e3f2fd;
+            padding-bottom: 10px;
+            margin-top: 0;
         }
-
-        .effective-date {
-            color: var(--text-muted);
-            font-size: 14px;
-        }
-
         h2 {
-            color: var(--primary-color);
-            font-size: 20px;
-            margin-top: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
+            color: #0d47a1;
+            margin-top: 25px;
+            font-size: 1.25rem;
         }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
         .highlight-box {
-            background-color: rgba(25, 118, 210, 0.08);
-            border-left: 4px solid var(--primary-color);
+            background-color: #e8f5e9;
+            border-left: 4px solid #2e7d32;
             padding: 15px;
             margin: 20px 0;
             border-radius: 4px;
         }
-
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
         .footer {
             margin-top: 40px;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 14px;
-            border-top: 1px solid var(--border-color);
             padding-top: 20px;
-        }
-
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            border-top: 1px solid #dee2e6;
+            font-size: 0.9rem;
+            color: #6c757d;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Privacy Policy for SMS Kavach</h1>
+        <p><strong>Effective Date:</strong> October 2026</p>
+        <p><strong>App Package:</strong> <code>org.mango.sentinelapp</code></p>
+        <p><strong>Developer Email:</strong> <a href="mailto:mangogolahe@gmail.com">mangogolahe@gmail.com</a></p>
 
-<div class="container">
-    <header>
-        <h1>🛡️ SMS Kavach</h1>
-        <p><strong>Privacy Policy</strong></p>
-        <p class="effective-date">Effective Date: July 21, 2025</p>
-    </header>
+        <div class="highlight-box">
+            <strong>🔒 100% On-Device Privacy Guarantee:</strong>
+            SMS Kavach is an offline-first, privacy-focused security guardian. Your contacts, address book, SMS content, and WhatsApp messages are analyzed <strong>100% locally on your device</strong>. We NEVER collect, upload, or transmit your private contacts or message text to any remote server or cloud database.
+        </div>
 
-    <div class="highlight-box">
-        <strong>100% On-Device Privacy Commitment:</strong> SMS Kavach runs threat detection completely locally on your device. Your SMS messages, phone status, and personal data are <strong>never uploaded, shared, or transmitted to any external servers</strong>.
-    </div>
-
-    <section>
-        <h2>1. Overview</h2>
-        <p>Your privacy is of utmost importance to us. This Privacy Policy explains how <strong>SMS Kavach</strong> ("we", "us", or "our") handles permissions and information when you use our mobile application.</p>
-    </section>
-
-    <section>
-        <h2>2. Information We Collect</h2>
-        <p><strong>SMS Kavach does NOT collect, store on servers, or transmit any personal data.</strong></p>
+        <h2>1. Information Processing & Collection</h2>
+        <p>SMS Kavach is engineered with privacy by design. Here is how data is handled on your device:</p>
         <ul>
-            <li><strong>Local On-Device Analysis:</strong> All SMS threat scanning occurs in real-time on your phone's processor.</li>
-            <li><strong>Encrypted Local Log:</strong> If a spam or phishing message is intercepted, it is saved strictly in your phone's local storage in an encrypted format using hardware-backed <strong>AES-256 GCM encryption</strong> via the Android KeyStore. Nobody else can read your local log.</li>
+            <li><strong>SMS & WhatsApp Messages:</strong> Intercepted locally in real-time and evaluated by on-device AI algorithms. Message text is stored strictly on your local device storage inside encrypted databases and is never sent to external servers.</li>
+            <li><strong>Phone Contact Whitelist:</strong> Numbers added to your "Friends & Family" trusted list remain strictly on your device's local encrypted storage. We <strong>never upload your contacts</strong> to any server.</li>
+            <li><strong>Hardware-Backed Encryption:</strong> Local logs and saved spam messages are encrypted on-device using AES-256 GCM encryption via Android's hardware-backed KeyStore.</li>
         </ul>
-    </section>
 
-    <section>
-        <h2>3. Permissions We Use & Why</h2>
-        <p>SMS Kavach requests sensitive permissions strictly for its core functionality as an SMS spam blocker and phishing threat guardian:</p>
+        <h2>2. Permissions Requested & Purpose</h2>
+        <p>SMS Kavach requests minimal permissions necessary to provide security features:</p>
         <ul>
-            <li><strong><code>RECEIVE_SMS</code> & <code>READ_SMS</code>:</strong> Required to detect incoming SMS messages in real time and scan text content for phishing links, fake KYC alerts, APK malware downloads, and lottery scams.</li>
-            <li><strong><code>READ_PHONE_STATE</code>:</strong> Used strictly to detect if an active phone call is ongoing when an OTP arrives, enabling our <em>Call-Time OTP Fraud Warning</em> feature to prevent phone call scams.</li>
-            <li><strong><code>SYSTEM_ALERT_WINDOW</code>:</strong> Allows SMS Kavach to display a real-time warning popup over your screen whenever a high-risk SMS threat is detected.</li>
+            <li><code>RECEIVE_SMS</code> & <code>READ_SMS</code>: Core requirement to detect and alert against incoming SMS spam, phishing links, and scam messages.</li>
+            <li><code>READ_PHONE_STATE</code>: Optional permission used solely to warn if transactional OTPs arrive during an active phone call to prevent live call extortion.</li>
+            <li><code>SYSTEM_ALERT_WINDOW</code>: Optional permission used to display real-time Threat Warning Popup Cards over other apps when a scam is detected.</li>
+            <li><code>BIND_NOTIFICATION_LISTENER_SERVICE</code>: Optional permission used to scan incoming WhatsApp and WhatsApp Business notification previews locally for scams and phishing links.</li>
         </ul>
-    </section>
 
-    <section>
-        <h2>4. Third-Party Services</h2>
-        <p>Our app integrates trusted third-party SDKs for non-intrusive ads and app stability monitoring:</p>
+        <h2>3. Third-Party Services & Diagnostics</h2>
+        <p>SMS Kavach integrates limited, trusted third-party SDKs for advertising and basic diagnostics:</p>
         <ul>
-            <li><strong>Google AdMob:</strong> Serves non-intrusive banner advertisements. AdMob may collect anonymous device identifiers strictly for ad delivery in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-            <li><strong>Firebase Analytics:</strong> Collects anonymous crash logs and basic performance diagnostics to keep the app stable and crash-free.</li>
+            <li><strong>Google AdMob:</strong> Used to display non-intrusive banner advertisements. AdMob may collect device identifiers (advertising ID) and coarse location for ad serving in compliance with Google Play Policy.</li>
+            <li><strong>Firebase Analytics & Crash Reporting:</strong> Used to collect anonymous performance metrics and crash diagnostic logs to improve app stability. No personally identifiable information (PII) or message content is ever sent to Firebase.</li>
         </ul>
-    </section>
 
-    <section>
-        <h2>5. Sharing of Information</h2>
-        <p>We <strong>do not sell, rent, trade, or share</strong> your personal information or SMS content with any third parties. All threat evaluation happens locally on your Android device.</p>
-    </section>
+        <h2>4. Data Retention & Deletion</h2>
+        <p>You have full control over all data stored by SMS Kavach:</p>
+        <ul>
+            <li>You can delete individual spam messages or wipe the entire stored list anytime using the <strong>"Delete All"</strong> button on the Home Screen.</li>
+            <li>Uninstalling the application or clearing app storage in Android Settings completely erases all local encrypted logs and preferences permanently.</li>
+        </ul>
 
-    <section>
+        <h2>5. Security</h2>
+        <p>We take the security of your data seriously. All local data is protected by hardware-backed 256-bit AES-256 GCM encryption. Model update payloads downloaded over the air are authenticated using SHA-256 hashes and RSA digital signatures to prevent tampering.</p>
+
         <h2>6. Children's Privacy</h2>
-        <p>SMS Kavach is not directed to children under 13 and does not knowingly collect personal information from children.</p>
-    </section>
+        <p>SMS Kavach does not knowingly collect or solicit any personal information from children under the age of 13.</p>
 
-    <section>
         <h2>7. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy periodically. Any updates will be reflected on this page with an updated effective date.</p>
-    </section>
+        <p>We may update our Privacy Policy from time to time. Any changes will be published on this page with an updated effective date.</p>
 
-    <section>
         <h2>8. Contact Us</h2>
-        <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:mangogolahe@gmail.com">mangogolahe@gmail.com</a></p>
-    </section>
+        <p>If you have any questions, feedback, or privacy inquiries regarding SMS Kavach, please contact us at:</p>
+        <p>📧 Email: <a href="mailto:mangogolahe@gmail.com">mangogolahe@gmail.com</a></p>
 
-    <div class="footer">
-        © 2025 SMS Kavach. All rights reserved.
+        <div class="footer">
+            &copy; 2026 SMS Kavach (org.mango.sentinelapp). All rights reserved.
+        </div>
     </div>
-</div>
-
 </body>
 </html>
